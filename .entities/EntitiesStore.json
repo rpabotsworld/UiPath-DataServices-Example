@@ -1,0 +1,512 @@
+{
+  "IsCloudStoreUrl": true,
+  "StoreUrl": "https://cloud.uipath.com/AIFabricDemo/RPABOTSWORLD/dataservice_/entities",
+  "TenantName": "RPABOTSWORLD",
+  "Namespace": "UiPath_Entities_Example",
+  "SelectedEntitiesNames": [
+    "Products",
+    "Suppliers"
+  ],
+  "Entities": [
+    {
+      "Id": "5e206ca6-f3e6-ea11-8b03-000d3a22a913",
+      "Name": "Products",
+      "DisplayName": "Products",
+      "Description": "Table \"Products\"",
+      "CreateTime": "2020-08-25T16:54:34.17Z",
+      "UpdateTime": "2020-08-25T17:16:26.07Z",
+      "Fields": [
+        {
+          "Id": "5f206ca6-f3e6-ea11-8b03-000d3a22a913",
+          "Name": "Id",
+          "DisplayName": "Id",
+          "Description": "System built-in field",
+          "CreateTime": "2020-08-25T16:54:34.237Z",
+          "UpdateTime": "2020-08-25T16:54:34.237Z",
+          "SqlType": {
+            "Name": "UNIQUEIDENTIFIER",
+            "LengthLimit": null,
+            "MaxValue": null,
+            "MinValue": null,
+            "DecimalPrecision": null
+          },
+          "IsSystemField": true,
+          "IsAttachment": false,
+          "IsRequired": true,
+          "ReferenceEntity": null
+        },
+        {
+          "Id": "60206ca6-f3e6-ea11-8b03-000d3a22a913",
+          "Name": "CreateTime",
+          "DisplayName": "CreateTime",
+          "Description": "System built-in field",
+          "CreateTime": "2020-08-25T16:54:34.237Z",
+          "UpdateTime": "2020-08-25T16:54:34.237Z",
+          "SqlType": {
+            "Name": "DATETIMEOFFSET",
+            "LengthLimit": null,
+            "MaxValue": null,
+            "MinValue": null,
+            "DecimalPrecision": null
+          },
+          "IsSystemField": true,
+          "IsAttachment": false,
+          "IsRequired": true,
+          "ReferenceEntity": null
+        },
+        {
+          "Id": "61206ca6-f3e6-ea11-8b03-000d3a22a913",
+          "Name": "CreatedBy",
+          "DisplayName": "CreatedBy",
+          "Description": "System built-in field",
+          "CreateTime": "2020-08-25T16:54:34.237Z",
+          "UpdateTime": "2020-08-25T16:54:34.237Z",
+          "SqlType": {
+            "Name": "UNIQUEIDENTIFIER",
+            "LengthLimit": null,
+            "MaxValue": null,
+            "MinValue": null,
+            "DecimalPrecision": null
+          },
+          "IsSystemField": true,
+          "IsAttachment": false,
+          "IsRequired": true,
+          "ReferenceEntity": null
+        },
+        {
+          "Id": "62206ca6-f3e6-ea11-8b03-000d3a22a913",
+          "Name": "UpdateTime",
+          "DisplayName": "UpdateTime",
+          "Description": "System built-in field",
+          "CreateTime": "2020-08-25T16:54:34.237Z",
+          "UpdateTime": "2020-08-25T16:54:34.237Z",
+          "SqlType": {
+            "Name": "DATETIMEOFFSET",
+            "LengthLimit": null,
+            "MaxValue": null,
+            "MinValue": null,
+            "DecimalPrecision": null
+          },
+          "IsSystemField": true,
+          "IsAttachment": false,
+          "IsRequired": false,
+          "ReferenceEntity": null
+        },
+        {
+          "Id": "63206ca6-f3e6-ea11-8b03-000d3a22a913",
+          "Name": "UpdatedBy",
+          "DisplayName": "UpdatedBy",
+          "Description": "System built-in field",
+          "CreateTime": "2020-08-25T16:54:34.237Z",
+          "UpdateTime": "2020-08-25T16:54:34.237Z",
+          "SqlType": {
+            "Name": "UNIQUEIDENTIFIER",
+            "LengthLimit": null,
+            "MaxValue": null,
+            "MinValue": null,
+            "DecimalPrecision": null
+          },
+          "IsSystemField": true,
+          "IsAttachment": false,
+          "IsRequired": false,
+          "ReferenceEntity": null
+        },
+        {
+          "Id": "fd80bfff-f5e6-ea11-8b03-000d3a22a913",
+          "Name": "ProductID",
+          "DisplayName": "ProductID",
+          "Description": "",
+          "CreateTime": "2020-08-25T17:11:23.037Z",
+          "UpdateTime": "2020-08-25T17:11:23.037Z",
+          "SqlType": {
+            "Name": "DECIMAL",
+            "LengthLimit": 1000,
+            "MaxValue": 1000000000000.0,
+            "MinValue": -1000000000000.0,
+            "DecimalPrecision": 2
+          },
+          "IsSystemField": false,
+          "IsAttachment": false,
+          "IsRequired": true,
+          "ReferenceEntity": null
+        },
+        {
+          "Id": "ce8e9d0d-f6e6-ea11-8b03-000d3a22a913",
+          "Name": "ProductName",
+          "DisplayName": "ProductName",
+          "Description": "",
+          "CreateTime": "2020-08-25T17:11:46.297Z",
+          "UpdateTime": "2020-08-25T17:11:46.297Z",
+          "SqlType": {
+            "Name": "NVARCHAR",
+            "LengthLimit": 200,
+            "MaxValue": null,
+            "MinValue": null,
+            "DecimalPrecision": null
+          },
+          "IsSystemField": false,
+          "IsAttachment": false,
+          "IsRequired": false,
+          "ReferenceEntity": null
+        },
+        {
+          "Id": "1a57ee18-f6e6-ea11-8b03-000d3a22a913",
+          "Name": "QuantityPerUnit",
+          "DisplayName": "QuantityPerUnit",
+          "Description": "",
+          "CreateTime": "2020-08-25T17:12:05.29Z",
+          "UpdateTime": "2020-08-25T17:12:05.29Z",
+          "SqlType": {
+            "Name": "DECIMAL",
+            "LengthLimit": 1000,
+            "MaxValue": 1000000000000.0,
+            "MinValue": -1000000000000.0,
+            "DecimalPrecision": 2
+          },
+          "IsSystemField": false,
+          "IsAttachment": false,
+          "IsRequired": false,
+          "ReferenceEntity": null
+        },
+        {
+          "Id": "75e5d820-f6e6-ea11-8b03-000d3a22a913",
+          "Name": "UnitPrice",
+          "DisplayName": "UnitPrice",
+          "Description": "",
+          "CreateTime": "2020-08-25T17:12:18.563Z",
+          "UpdateTime": "2020-08-25T17:12:18.563Z",
+          "SqlType": {
+            "Name": "DECIMAL",
+            "LengthLimit": 1000,
+            "MaxValue": 1000000000000.0,
+            "MinValue": -1000000000000.0,
+            "DecimalPrecision": 2
+          },
+          "IsSystemField": false,
+          "IsAttachment": false,
+          "IsRequired": false,
+          "ReferenceEntity": null
+        },
+        {
+          "Id": "12356027-f6e6-ea11-8b03-000d3a22a913",
+          "Name": "UnitsInStock",
+          "DisplayName": "UnitsInStock",
+          "Description": "",
+          "CreateTime": "2020-08-25T17:12:29.523Z",
+          "UpdateTime": "2020-08-25T17:12:29.523Z",
+          "SqlType": {
+            "Name": "DECIMAL",
+            "LengthLimit": 1000,
+            "MaxValue": 1000000000000.0,
+            "MinValue": -1000000000000.0,
+            "DecimalPrecision": 2
+          },
+          "IsSystemField": false,
+          "IsAttachment": false,
+          "IsRequired": false,
+          "ReferenceEntity": null
+        },
+        {
+          "Id": "eb74962d-f6e6-ea11-8b03-000d3a22a913",
+          "Name": "UnitsOnOrder",
+          "DisplayName": "UnitsOnOrder",
+          "Description": "",
+          "CreateTime": "2020-08-25T17:12:39.943Z",
+          "UpdateTime": "2020-08-25T17:12:39.943Z",
+          "SqlType": {
+            "Name": "DECIMAL",
+            "LengthLimit": 1000,
+            "MaxValue": 1000000000000.0,
+            "MinValue": -1000000000000.0,
+            "DecimalPrecision": 2
+          },
+          "IsSystemField": false,
+          "IsAttachment": false,
+          "IsRequired": false,
+          "ReferenceEntity": null
+        },
+        {
+          "Id": "27545135-f6e6-ea11-8b03-000d3a22a913",
+          "Name": "ReorderLevel",
+          "DisplayName": "ReorderLevel",
+          "Description": "",
+          "CreateTime": "2020-08-25T17:12:52.917Z",
+          "UpdateTime": "2020-08-25T17:12:52.917Z",
+          "SqlType": {
+            "Name": "DECIMAL",
+            "LengthLimit": 1000,
+            "MaxValue": 1000000000000.0,
+            "MinValue": -1000000000000.0,
+            "DecimalPrecision": 2
+          },
+          "IsSystemField": false,
+          "IsAttachment": false,
+          "IsRequired": false,
+          "ReferenceEntity": null
+        },
+        {
+          "Id": "b230a43b-f6e6-ea11-8b03-000d3a22a913",
+          "Name": "Discontinued",
+          "DisplayName": "Discontinued",
+          "Description": "",
+          "CreateTime": "2020-08-25T17:13:03.52Z",
+          "UpdateTime": "2020-08-25T17:13:03.52Z",
+          "SqlType": {
+            "Name": "BIT",
+            "LengthLimit": 200,
+            "MaxValue": null,
+            "MinValue": null,
+            "DecimalPrecision": null
+          },
+          "IsSystemField": false,
+          "IsAttachment": false,
+          "IsRequired": false,
+          "ReferenceEntity": null
+        },
+        {
+          "Id": "3cbd60b4-f6e6-ea11-8b03-000d3a22a913",
+          "Name": "SupplierID",
+          "DisplayName": "SupplierID",
+          "Description": "",
+          "CreateTime": "2020-08-25T17:16:26.067Z",
+          "UpdateTime": "2020-08-25T17:16:26.067Z",
+          "SqlType": {
+            "Name": "UNIQUEIDENTIFIER",
+            "LengthLimit": 200,
+            "MaxValue": null,
+            "MinValue": null,
+            "DecimalPrecision": null
+          },
+          "IsSystemField": false,
+          "IsAttachment": false,
+          "IsRequired": true,
+          "ReferenceEntity": {
+            "Name": "Suppliers"
+          }
+        }
+      ],
+      "RecordCount": 0
+    },
+    {
+      "Id": "5748fdb1-f3e6-ea11-8b03-000d3a22a913",
+      "Name": "Suppliers",
+      "DisplayName": "Suppliers",
+      "Description": "Table \"Suppliers\"",
+      "CreateTime": "2020-08-25T16:54:53.583Z",
+      "UpdateTime": "2020-08-25T17:15:49.077Z",
+      "Fields": [
+        {
+          "Id": "5848fdb1-f3e6-ea11-8b03-000d3a22a913",
+          "Name": "Id",
+          "DisplayName": "Id",
+          "Description": "System built-in field",
+          "CreateTime": "2020-08-25T16:54:53.597Z",
+          "UpdateTime": "2020-08-25T16:54:53.597Z",
+          "SqlType": {
+            "Name": "UNIQUEIDENTIFIER",
+            "LengthLimit": null,
+            "MaxValue": null,
+            "MinValue": null,
+            "DecimalPrecision": null
+          },
+          "IsSystemField": true,
+          "IsAttachment": false,
+          "IsRequired": true,
+          "ReferenceEntity": null
+        },
+        {
+          "Id": "5948fdb1-f3e6-ea11-8b03-000d3a22a913",
+          "Name": "CreateTime",
+          "DisplayName": "CreateTime",
+          "Description": "System built-in field",
+          "CreateTime": "2020-08-25T16:54:53.597Z",
+          "UpdateTime": "2020-08-25T16:54:53.597Z",
+          "SqlType": {
+            "Name": "DATETIMEOFFSET",
+            "LengthLimit": null,
+            "MaxValue": null,
+            "MinValue": null,
+            "DecimalPrecision": null
+          },
+          "IsSystemField": true,
+          "IsAttachment": false,
+          "IsRequired": true,
+          "ReferenceEntity": null
+        },
+        {
+          "Id": "5a48fdb1-f3e6-ea11-8b03-000d3a22a913",
+          "Name": "CreatedBy",
+          "DisplayName": "CreatedBy",
+          "Description": "System built-in field",
+          "CreateTime": "2020-08-25T16:54:53.597Z",
+          "UpdateTime": "2020-08-25T16:54:53.597Z",
+          "SqlType": {
+            "Name": "UNIQUEIDENTIFIER",
+            "LengthLimit": null,
+            "MaxValue": null,
+            "MinValue": null,
+            "DecimalPrecision": null
+          },
+          "IsSystemField": true,
+          "IsAttachment": false,
+          "IsRequired": true,
+          "ReferenceEntity": null
+        },
+        {
+          "Id": "5b48fdb1-f3e6-ea11-8b03-000d3a22a913",
+          "Name": "UpdateTime",
+          "DisplayName": "UpdateTime",
+          "Description": "System built-in field",
+          "CreateTime": "2020-08-25T16:54:53.597Z",
+          "UpdateTime": "2020-08-25T16:54:53.597Z",
+          "SqlType": {
+            "Name": "DATETIMEOFFSET",
+            "LengthLimit": null,
+            "MaxValue": null,
+            "MinValue": null,
+            "DecimalPrecision": null
+          },
+          "IsSystemField": true,
+          "IsAttachment": false,
+          "IsRequired": false,
+          "ReferenceEntity": null
+        },
+        {
+          "Id": "5c48fdb1-f3e6-ea11-8b03-000d3a22a913",
+          "Name": "UpdatedBy",
+          "DisplayName": "UpdatedBy",
+          "Description": "System built-in field",
+          "CreateTime": "2020-08-25T16:54:53.597Z",
+          "UpdateTime": "2020-08-25T16:54:53.597Z",
+          "SqlType": {
+            "Name": "UNIQUEIDENTIFIER",
+            "LengthLimit": null,
+            "MaxValue": null,
+            "MinValue": null,
+            "DecimalPrecision": null
+          },
+          "IsSystemField": true,
+          "IsAttachment": false,
+          "IsRequired": false,
+          "ReferenceEntity": null
+        },
+        {
+          "Id": "bee9ce7e-f6e6-ea11-8b03-000d3a22a913",
+          "Name": "SupplierID",
+          "DisplayName": "SupplierID",
+          "Description": "",
+          "CreateTime": "2020-08-25T17:14:56.203Z",
+          "UpdateTime": "2020-08-25T17:14:56.203Z",
+          "SqlType": {
+            "Name": "DECIMAL",
+            "LengthLimit": 1000,
+            "MaxValue": 1000000000000.0,
+            "MinValue": -1000000000000.0,
+            "DecimalPrecision": 2
+          },
+          "IsSystemField": false,
+          "IsAttachment": false,
+          "IsRequired": true,
+          "ReferenceEntity": null
+        },
+        {
+          "Id": "99292485-f6e6-ea11-8b03-000d3a22a913",
+          "Name": "CompanyName",
+          "DisplayName": "CompanyName",
+          "Description": "",
+          "CreateTime": "2020-08-25T17:15:06.817Z",
+          "UpdateTime": "2020-08-25T17:15:06.817Z",
+          "SqlType": {
+            "Name": "NVARCHAR",
+            "LengthLimit": 200,
+            "MaxValue": null,
+            "MinValue": null,
+            "DecimalPrecision": null
+          },
+          "IsSystemField": false,
+          "IsAttachment": false,
+          "IsRequired": false,
+          "ReferenceEntity": null
+        },
+        {
+          "Id": "5d665d8d-f6e6-ea11-8b03-000d3a22a913",
+          "Name": "ContactName",
+          "DisplayName": "ContactName",
+          "Description": "",
+          "CreateTime": "2020-08-25T17:15:20.623Z",
+          "UpdateTime": "2020-08-25T17:15:20.623Z",
+          "SqlType": {
+            "Name": "NVARCHAR",
+            "LengthLimit": 200,
+            "MaxValue": null,
+            "MinValue": null,
+            "DecimalPrecision": null
+          },
+          "IsSystemField": false,
+          "IsAttachment": false,
+          "IsRequired": false,
+          "ReferenceEntity": null
+        },
+        {
+          "Id": "5e665d8d-f6e6-ea11-8b03-000d3a22a913",
+          "Name": "Address",
+          "DisplayName": "Address",
+          "Description": "",
+          "CreateTime": "2020-08-25T17:15:30.467Z",
+          "UpdateTime": "2020-08-25T17:15:30.467Z",
+          "SqlType": {
+            "Name": "NVARCHAR",
+            "LengthLimit": 200,
+            "MaxValue": null,
+            "MinValue": null,
+            "DecimalPrecision": null
+          },
+          "IsSystemField": false,
+          "IsAttachment": false,
+          "IsRequired": false,
+          "ReferenceEntity": null
+        },
+        {
+          "Id": "3c096998-f6e6-ea11-8b03-000d3a22a913",
+          "Name": "Country",
+          "DisplayName": "Country",
+          "Description": "",
+          "CreateTime": "2020-08-25T17:15:39.153Z",
+          "UpdateTime": "2020-08-25T17:15:39.153Z",
+          "SqlType": {
+            "Name": "NVARCHAR",
+            "LengthLimit": 200,
+            "MaxValue": null,
+            "MinValue": null,
+            "DecimalPrecision": null
+          },
+          "IsSystemField": false,
+          "IsAttachment": false,
+          "IsRequired": false,
+          "ReferenceEntity": null
+        },
+        {
+          "Id": "3d096998-f6e6-ea11-8b03-000d3a22a913",
+          "Name": "Phone",
+          "DisplayName": "Phone",
+          "Description": "",
+          "CreateTime": "2020-08-25T17:15:49.077Z",
+          "UpdateTime": "2020-08-25T17:15:49.077Z",
+          "SqlType": {
+            "Name": "DECIMAL",
+            "LengthLimit": 1000,
+            "MaxValue": 1000000000000.0,
+            "MinValue": -1000000000000.0,
+            "DecimalPrecision": 2
+          },
+          "IsSystemField": false,
+          "IsAttachment": false,
+          "IsRequired": false,
+          "ReferenceEntity": null
+        }
+      ],
+      "RecordCount": 0
+    }
+  ],
+  "EntitiesJson": "{\"entities\":[{\"name\":\"Products\",\"displayName\":\"Products\",\"entityTypeId\":0,\"description\":\"Table \\\"Products\\\"\",\"fields\":[{\"id\":\"5f206ca6-f3e6-ea11-8b03-000d3a22a913\",\"name\":\"Id\",\"isPrimaryKey\":true,\"isForeignKey\":false,\"isUnique\":false,\"referenceType\":0,\"sqlType\":{\"name\":\"UNIQUEIDENTIFIER\"},\"isRequired\":true,\"displayName\":\"Id\",\"description\":\"System built-in field\",\"createTime\":\"2020-08-25T16:54:34.237Z\",\"createdBy\":\"73b701e9-66f8-423b-98c0-6b3d722b0ed6\",\"updateTime\":\"2020-08-25T16:54:34.237Z\",\"isSystemField\":true,\"fieldDisplayType\":0,\"choiceSetId\":\"00000000-0000-0000-0000-000000000000\",\"isAttachment\":false},{\"id\":\"60206ca6-f3e6-ea11-8b03-000d3a22a913\",\"name\":\"CreateTime\",\"isPrimaryKey\":false,\"isForeignKey\":false,\"isUnique\":false,\"referenceType\":0,\"sqlType\":{\"name\":\"DATETIMEOFFSET\"},\"isRequired\":true,\"displayName\":\"CreateTime\",\"description\":\"System built-in field\",\"createTime\":\"2020-08-25T16:54:34.237Z\",\"createdBy\":\"73b701e9-66f8-423b-98c0-6b3d722b0ed6\",\"updateTime\":\"2020-08-25T16:54:34.237Z\",\"isSystemField\":true,\"fieldDisplayType\":0,\"choiceSetId\":\"00000000-0000-0000-0000-000000000000\",\"isAttachment\":false},{\"id\":\"61206ca6-f3e6-ea11-8b03-000d3a22a913\",\"name\":\"CreatedBy\",\"isPrimaryKey\":false,\"isForeignKey\":false,\"isUnique\":false,\"referenceType\":0,\"sqlType\":{\"name\":\"UNIQUEIDENTIFIER\"},\"isRequired\":true,\"displayName\":\"CreatedBy\",\"description\":\"System built-in field\",\"createTime\":\"2020-08-25T16:54:34.237Z\",\"createdBy\":\"73b701e9-66f8-423b-98c0-6b3d722b0ed6\",\"updateTime\":\"2020-08-25T16:54:34.237Z\",\"isSystemField\":true,\"fieldDisplayType\":0,\"choiceSetId\":\"00000000-0000-0000-0000-000000000000\",\"isAttachment\":false},{\"id\":\"62206ca6-f3e6-ea11-8b03-000d3a22a913\",\"name\":\"UpdateTime\",\"isPrimaryKey\":false,\"isForeignKey\":false,\"isUnique\":false,\"referenceType\":0,\"sqlType\":{\"name\":\"DATETIMEOFFSET\"},\"isRequired\":false,\"displayName\":\"UpdateTime\",\"description\":\"System built-in field\",\"createTime\":\"2020-08-25T16:54:34.237Z\",\"createdBy\":\"73b701e9-66f8-423b-98c0-6b3d722b0ed6\",\"updateTime\":\"2020-08-25T16:54:34.237Z\",\"isSystemField\":true,\"fieldDisplayType\":0,\"choiceSetId\":\"00000000-0000-0000-0000-000000000000\",\"isAttachment\":false},{\"id\":\"63206ca6-f3e6-ea11-8b03-000d3a22a913\",\"name\":\"UpdatedBy\",\"isPrimaryKey\":false,\"isForeignKey\":false,\"isUnique\":false,\"referenceType\":0,\"sqlType\":{\"name\":\"UNIQUEIDENTIFIER\"},\"isRequired\":false,\"displayName\":\"UpdatedBy\",\"description\":\"System built-in field\",\"createTime\":\"2020-08-25T16:54:34.237Z\",\"createdBy\":\"73b701e9-66f8-423b-98c0-6b3d722b0ed6\",\"updateTime\":\"2020-08-25T16:54:34.237Z\",\"isSystemField\":true,\"fieldDisplayType\":0,\"choiceSetId\":\"00000000-0000-0000-0000-000000000000\",\"isAttachment\":false},{\"id\":\"fd80bfff-f5e6-ea11-8b03-000d3a22a913\",\"name\":\"ProductID\",\"isPrimaryKey\":false,\"isForeignKey\":false,\"isUnique\":false,\"referenceType\":0,\"sqlType\":{\"name\":\"DECIMAL\",\"lengthLimit\":1000,\"maxValue\":1000000000000.0,\"minValue\":-1000000000000.0,\"decimalPrecision\":2},\"isRequired\":true,\"displayName\":\"ProductID\",\"description\":\"\",\"createTime\":\"2020-08-25T17:11:23.037Z\",\"createdBy\":\"73b701e9-66f8-423b-98c0-6b3d722b0ed6\",\"updateTime\":\"2020-08-25T17:11:23.037Z\",\"isSystemField\":false,\"fieldDisplayType\":0,\"choiceSetId\":\"00000000-0000-0000-0000-000000000000\",\"isAttachment\":false},{\"id\":\"ce8e9d0d-f6e6-ea11-8b03-000d3a22a913\",\"name\":\"ProductName\",\"isPrimaryKey\":false,\"isForeignKey\":false,\"isUnique\":false,\"referenceType\":0,\"sqlType\":{\"name\":\"NVARCHAR\",\"lengthLimit\":200},\"isRequired\":false,\"displayName\":\"ProductName\",\"description\":\"\",\"createTime\":\"2020-08-25T17:11:46.297Z\",\"createdBy\":\"73b701e9-66f8-423b-98c0-6b3d722b0ed6\",\"updateTime\":\"2020-08-25T17:11:46.297Z\",\"isSystemField\":false,\"fieldDisplayType\":0,\"choiceSetId\":\"00000000-0000-0000-0000-000000000000\",\"isAttachment\":false},{\"id\":\"1a57ee18-f6e6-ea11-8b03-000d3a22a913\",\"name\":\"QuantityPerUnit\",\"isPrimaryKey\":false,\"isForeignKey\":false,\"isUnique\":false,\"referenceType\":0,\"sqlType\":{\"name\":\"DECIMAL\",\"lengthLimit\":1000,\"maxValue\":1000000000000.0,\"minValue\":-1000000000000.0,\"decimalPrecision\":2},\"isRequired\":false,\"displayName\":\"QuantityPerUnit\",\"description\":\"\",\"createTime\":\"2020-08-25T17:12:05.29Z\",\"createdBy\":\"73b701e9-66f8-423b-98c0-6b3d722b0ed6\",\"updateTime\":\"2020-08-25T17:12:05.29Z\",\"isSystemField\":false,\"fieldDisplayType\":0,\"choiceSetId\":\"00000000-0000-0000-0000-000000000000\",\"isAttachment\":false},{\"id\":\"75e5d820-f6e6-ea11-8b03-000d3a22a913\",\"name\":\"UnitPrice\",\"isPrimaryKey\":false,\"isForeignKey\":false,\"isUnique\":false,\"referenceType\":0,\"sqlType\":{\"name\":\"DECIMAL\",\"lengthLimit\":1000,\"maxValue\":1000000000000.0,\"minValue\":-1000000000000.0,\"decimalPrecision\":2},\"isRequired\":false,\"displayName\":\"UnitPrice\",\"description\":\"\",\"createTime\":\"2020-08-25T17:12:18.563Z\",\"createdBy\":\"73b701e9-66f8-423b-98c0-6b3d722b0ed6\",\"updateTime\":\"2020-08-25T17:12:18.563Z\",\"isSystemField\":false,\"fieldDisplayType\":0,\"choiceSetId\":\"00000000-0000-0000-0000-000000000000\",\"isAttachment\":false},{\"id\":\"12356027-f6e6-ea11-8b03-000d3a22a913\",\"name\":\"UnitsInStock\",\"isPrimaryKey\":false,\"isForeignKey\":false,\"isUnique\":false,\"referenceType\":0,\"sqlType\":{\"name\":\"DECIMAL\",\"lengthLimit\":1000,\"maxValue\":1000000000000.0,\"minValue\":-1000000000000.0,\"decimalPrecision\":2},\"isRequired\":false,\"displayName\":\"UnitsInStock\",\"description\":\"\",\"createTime\":\"2020-08-25T17:12:29.523Z\",\"createdBy\":\"73b701e9-66f8-423b-98c0-6b3d722b0ed6\",\"updateTime\":\"2020-08-25T17:12:29.523Z\",\"isSystemField\":false,\"fieldDisplayType\":0,\"choiceSetId\":\"00000000-0000-0000-0000-000000000000\",\"isAttachment\":false},{\"id\":\"eb74962d-f6e6-ea11-8b03-000d3a22a913\",\"name\":\"UnitsOnOrder\",\"isPrimaryKey\":false,\"isForeignKey\":false,\"isUnique\":false,\"referenceType\":0,\"sqlType\":{\"name\":\"DECIMAL\",\"lengthLimit\":1000,\"maxValue\":1000000000000.0,\"minValue\":-1000000000000.0,\"decimalPrecision\":2},\"isRequired\":false,\"displayName\":\"UnitsOnOrder\",\"description\":\"\",\"createTime\":\"2020-08-25T17:12:39.943Z\",\"createdBy\":\"73b701e9-66f8-423b-98c0-6b3d722b0ed6\",\"updateTime\":\"2020-08-25T17:12:39.943Z\",\"isSystemField\":false,\"fieldDisplayType\":0,\"choiceSetId\":\"00000000-0000-0000-0000-000000000000\",\"isAttachment\":false},{\"id\":\"27545135-f6e6-ea11-8b03-000d3a22a913\",\"name\":\"ReorderLevel\",\"isPrimaryKey\":false,\"isForeignKey\":false,\"isUnique\":false,\"referenceType\":0,\"sqlType\":{\"name\":\"DECIMAL\",\"lengthLimit\":1000,\"maxValue\":1000000000000.0,\"minValue\":-1000000000000.0,\"decimalPrecision\":2},\"isRequired\":false,\"displayName\":\"ReorderLevel\",\"description\":\"\",\"createTime\":\"2020-08-25T17:12:52.917Z\",\"createdBy\":\"73b701e9-66f8-423b-98c0-6b3d722b0ed6\",\"updateTime\":\"2020-08-25T17:12:52.917Z\",\"isSystemField\":false,\"fieldDisplayType\":0,\"choiceSetId\":\"00000000-0000-0000-0000-000000000000\",\"defaultValue\":\"0\",\"isAttachment\":false},{\"id\":\"b230a43b-f6e6-ea11-8b03-000d3a22a913\",\"name\":\"Discontinued\",\"isPrimaryKey\":false,\"isForeignKey\":false,\"isUnique\":false,\"referenceType\":0,\"sqlType\":{\"name\":\"BIT\",\"lengthLimit\":200},\"isRequired\":false,\"displayName\":\"Discontinued\",\"description\":\"\",\"createTime\":\"2020-08-25T17:13:03.52Z\",\"createdBy\":\"73b701e9-66f8-423b-98c0-6b3d722b0ed6\",\"updateTime\":\"2020-08-25T17:13:03.52Z\",\"isSystemField\":false,\"fieldDisplayType\":0,\"choiceSetId\":\"00000000-0000-0000-0000-000000000000\",\"isAttachment\":false},{\"id\":\"3cbd60b4-f6e6-ea11-8b03-000d3a22a913\",\"name\":\"SupplierID\",\"isPrimaryKey\":false,\"isForeignKey\":true,\"isUnique\":false,\"referenceName\":\"fk_SupplierID_417bda61-fdd1-43ca-b056-fab04519d2dd\",\"referenceEntity\":{\"name\":\"Suppliers\",\"displayName\":\"Suppliers\",\"entityTypeId\":0,\"id\":\"5748fdb1-f3e6-ea11-8b03-000d3a22a913\",\"createTime\":\"0001-01-01T00:00:00Z\"},\"referenceField\":{\"id\":\"bee9ce7e-f6e6-ea11-8b03-000d3a22a913\",\"definition\":{\"name\":\"SupplierID\",\"isPrimaryKey\":false,\"isForeignKey\":false,\"isUnique\":false,\"referenceType\":0,\"sqlType\":{\"name\":\"DECIMAL\",\"lengthLimit\":1000,\"maxValue\":1000000000000.0,\"minValue\":-1000000000000.0,\"decimalPrecision\":2},\"isRequired\":false,\"displayName\":\"SupplierID\",\"createTime\":\"2020-08-25T17:45:21.9429747Z\",\"updateTime\":\"2020-08-25T17:45:21.942976Z\",\"isSystemField\":false,\"fieldDisplayType\":0,\"choiceSetId\":\"00000000-0000-0000-0000-000000000000\",\"isAttachment\":false}},\"referenceType\":0,\"sqlType\":{\"name\":\"UNIQUEIDENTIFIER\",\"lengthLimit\":200},\"isRequired\":true,\"displayName\":\"SupplierID\",\"description\":\"\",\"createTime\":\"2020-08-25T17:16:26.067Z\",\"createdBy\":\"73b701e9-66f8-423b-98c0-6b3d722b0ed6\",\"updateTime\":\"2020-08-25T17:16:26.067Z\",\"isSystemField\":false,\"fieldDisplayType\":1,\"choiceSetId\":\"00000000-0000-0000-0000-000000000000\",\"isAttachment\":false}],\"recordCount\":0,\"storageSizeInMB\":0.0,\"usedStorageSizeInMB\":0.0,\"id\":\"5e206ca6-f3e6-ea11-8b03-000d3a22a913\",\"createdBy\":\"73b701e9-66f8-423b-98c0-6b3d722b0ed6\",\"createTime\":\"2020-08-25T16:54:34.17Z\",\"updateTime\":\"2020-08-25T17:16:26.07Z\",\"updatedBy\":\"73b701e9-66f8-423b-98c0-6b3d722b0ed6\"},{\"name\":\"Suppliers\",\"displayName\":\"Suppliers\",\"entityTypeId\":0,\"description\":\"Table \\\"Suppliers\\\"\",\"fields\":[{\"id\":\"5848fdb1-f3e6-ea11-8b03-000d3a22a913\",\"name\":\"Id\",\"isPrimaryKey\":true,\"isForeignKey\":false,\"isUnique\":false,\"referenceType\":0,\"sqlType\":{\"name\":\"UNIQUEIDENTIFIER\"},\"isRequired\":true,\"displayName\":\"Id\",\"description\":\"System built-in field\",\"createTime\":\"2020-08-25T16:54:53.597Z\",\"createdBy\":\"73b701e9-66f8-423b-98c0-6b3d722b0ed6\",\"updateTime\":\"2020-08-25T16:54:53.597Z\",\"isSystemField\":true,\"fieldDisplayType\":0,\"choiceSetId\":\"00000000-0000-0000-0000-000000000000\",\"isAttachment\":false},{\"id\":\"5948fdb1-f3e6-ea11-8b03-000d3a22a913\",\"name\":\"CreateTime\",\"isPrimaryKey\":false,\"isForeignKey\":false,\"isUnique\":false,\"referenceType\":0,\"sqlType\":{\"name\":\"DATETIMEOFFSET\"},\"isRequired\":true,\"displayName\":\"CreateTime\",\"description\":\"System built-in field\",\"createTime\":\"2020-08-25T16:54:53.597Z\",\"createdBy\":\"73b701e9-66f8-423b-98c0-6b3d722b0ed6\",\"updateTime\":\"2020-08-25T16:54:53.597Z\",\"isSystemField\":true,\"fieldDisplayType\":0,\"choiceSetId\":\"00000000-0000-0000-0000-000000000000\",\"isAttachment\":false},{\"id\":\"5a48fdb1-f3e6-ea11-8b03-000d3a22a913\",\"name\":\"CreatedBy\",\"isPrimaryKey\":false,\"isForeignKey\":false,\"isUnique\":false,\"referenceType\":0,\"sqlType\":{\"name\":\"UNIQUEIDENTIFIER\"},\"isRequired\":true,\"displayName\":\"CreatedBy\",\"description\":\"System built-in field\",\"createTime\":\"2020-08-25T16:54:53.597Z\",\"createdBy\":\"73b701e9-66f8-423b-98c0-6b3d722b0ed6\",\"updateTime\":\"2020-08-25T16:54:53.597Z\",\"isSystemField\":true,\"fieldDisplayType\":0,\"choiceSetId\":\"00000000-0000-0000-0000-000000000000\",\"isAttachment\":false},{\"id\":\"5b48fdb1-f3e6-ea11-8b03-000d3a22a913\",\"name\":\"UpdateTime\",\"isPrimaryKey\":false,\"isForeignKey\":false,\"isUnique\":false,\"referenceType\":0,\"sqlType\":{\"name\":\"DATETIMEOFFSET\"},\"isRequired\":false,\"displayName\":\"UpdateTime\",\"description\":\"System built-in field\",\"createTime\":\"2020-08-25T16:54:53.597Z\",\"createdBy\":\"73b701e9-66f8-423b-98c0-6b3d722b0ed6\",\"updateTime\":\"2020-08-25T16:54:53.597Z\",\"isSystemField\":true,\"fieldDisplayType\":0,\"choiceSetId\":\"00000000-0000-0000-0000-000000000000\",\"isAttachment\":false},{\"id\":\"5c48fdb1-f3e6-ea11-8b03-000d3a22a913\",\"name\":\"UpdatedBy\",\"isPrimaryKey\":false,\"isForeignKey\":false,\"isUnique\":false,\"referenceType\":0,\"sqlType\":{\"name\":\"UNIQUEIDENTIFIER\"},\"isRequired\":false,\"displayName\":\"UpdatedBy\",\"description\":\"System built-in field\",\"createTime\":\"2020-08-25T16:54:53.597Z\",\"createdBy\":\"73b701e9-66f8-423b-98c0-6b3d722b0ed6\",\"updateTime\":\"2020-08-25T16:54:53.597Z\",\"isSystemField\":true,\"fieldDisplayType\":0,\"choiceSetId\":\"00000000-0000-0000-0000-000000000000\",\"isAttachment\":false},{\"id\":\"bee9ce7e-f6e6-ea11-8b03-000d3a22a913\",\"name\":\"SupplierID\",\"isPrimaryKey\":false,\"isForeignKey\":false,\"isUnique\":false,\"referenceType\":0,\"sqlType\":{\"name\":\"DECIMAL\",\"lengthLimit\":1000,\"maxValue\":1000000000000.0,\"minValue\":-1000000000000.0,\"decimalPrecision\":2},\"isRequired\":true,\"displayName\":\"SupplierID\",\"description\":\"\",\"createTime\":\"2020-08-25T17:14:56.203Z\",\"createdBy\":\"73b701e9-66f8-423b-98c0-6b3d722b0ed6\",\"updateTime\":\"2020-08-25T17:14:56.203Z\",\"isSystemField\":false,\"fieldDisplayType\":0,\"choiceSetId\":\"00000000-0000-0000-0000-000000000000\",\"isAttachment\":false},{\"id\":\"99292485-f6e6-ea11-8b03-000d3a22a913\",\"name\":\"CompanyName\",\"isPrimaryKey\":false,\"isForeignKey\":false,\"isUnique\":false,\"referenceType\":0,\"sqlType\":{\"name\":\"NVARCHAR\",\"lengthLimit\":200},\"isRequired\":false,\"displayName\":\"CompanyName\",\"description\":\"\",\"createTime\":\"2020-08-25T17:15:06.817Z\",\"createdBy\":\"73b701e9-66f8-423b-98c0-6b3d722b0ed6\",\"updateTime\":\"2020-08-25T17:15:06.817Z\",\"isSystemField\":false,\"fieldDisplayType\":0,\"choiceSetId\":\"00000000-0000-0000-0000-000000000000\",\"isAttachment\":false},{\"id\":\"5d665d8d-f6e6-ea11-8b03-000d3a22a913\",\"name\":\"ContactName\",\"isPrimaryKey\":false,\"isForeignKey\":false,\"isUnique\":false,\"referenceType\":0,\"sqlType\":{\"name\":\"NVARCHAR\",\"lengthLimit\":200},\"isRequired\":false,\"displayName\":\"ContactName\",\"description\":\"\",\"createTime\":\"2020-08-25T17:15:20.623Z\",\"createdBy\":\"73b701e9-66f8-423b-98c0-6b3d722b0ed6\",\"updateTime\":\"2020-08-25T17:15:20.623Z\",\"isSystemField\":false,\"fieldDisplayType\":0,\"choiceSetId\":\"00000000-0000-0000-0000-000000000000\",\"isAttachment\":false},{\"id\":\"5e665d8d-f6e6-ea11-8b03-000d3a22a913\",\"name\":\"Address\",\"isPrimaryKey\":false,\"isForeignKey\":false,\"isUnique\":false,\"referenceType\":0,\"sqlType\":{\"name\":\"NVARCHAR\",\"lengthLimit\":200},\"isRequired\":false,\"displayName\":\"Address\",\"description\":\"\",\"createTime\":\"2020-08-25T17:15:30.467Z\",\"createdBy\":\"73b701e9-66f8-423b-98c0-6b3d722b0ed6\",\"updateTime\":\"2020-08-25T17:15:30.467Z\",\"isSystemField\":false,\"fieldDisplayType\":0,\"choiceSetId\":\"00000000-0000-0000-0000-000000000000\",\"isAttachment\":false},{\"id\":\"3c096998-f6e6-ea11-8b03-000d3a22a913\",\"name\":\"Country\",\"isPrimaryKey\":false,\"isForeignKey\":false,\"isUnique\":false,\"referenceType\":0,\"sqlType\":{\"name\":\"NVARCHAR\",\"lengthLimit\":200},\"isRequired\":false,\"displayName\":\"Country\",\"description\":\"\",\"createTime\":\"2020-08-25T17:15:39.153Z\",\"createdBy\":\"73b701e9-66f8-423b-98c0-6b3d722b0ed6\",\"updateTime\":\"2020-08-25T17:15:39.153Z\",\"isSystemField\":false,\"fieldDisplayType\":0,\"choiceSetId\":\"00000000-0000-0000-0000-000000000000\",\"isAttachment\":false},{\"id\":\"3d096998-f6e6-ea11-8b03-000d3a22a913\",\"name\":\"Phone\",\"isPrimaryKey\":false,\"isForeignKey\":false,\"isUnique\":false,\"referenceType\":0,\"sqlType\":{\"name\":\"DECIMAL\",\"lengthLimit\":1000,\"maxValue\":1000000000000.0,\"minValue\":-1000000000000.0,\"decimalPrecision\":2},\"isRequired\":false,\"displayName\":\"Phone\",\"description\":\"\",\"createTime\":\"2020-08-25T17:15:49.077Z\",\"createdBy\":\"73b701e9-66f8-423b-98c0-6b3d722b0ed6\",\"updateTime\":\"2020-08-25T17:15:49.077Z\",\"isSystemField\":false,\"fieldDisplayType\":0,\"choiceSetId\":\"00000000-0000-0000-0000-000000000000\",\"isAttachment\":false}],\"recordCount\":0,\"storageSizeInMB\":0.0,\"usedStorageSizeInMB\":0.0,\"id\":\"5748fdb1-f3e6-ea11-8b03-000d3a22a913\",\"createdBy\":\"73b701e9-66f8-423b-98c0-6b3d722b0ed6\",\"createTime\":\"2020-08-25T16:54:53.583Z\",\"updateTime\":\"2020-08-25T17:15:49.077Z\",\"updatedBy\":\"73b701e9-66f8-423b-98c0-6b3d722b0ed6\"}],\"choicesets\":[]}"
+}
