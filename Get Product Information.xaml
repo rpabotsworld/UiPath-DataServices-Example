@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Get_Product_Information" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="898.4,1633.6" sap2010:WorkflowViewState.IdRef="Get_Product_Information_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:u="clr-namespace:UiPath_Entities_Example;assembly=DataService.UiPath_Entities_Example" xmlns:uda="clr-namespace:UiPath.DataService.Activities;assembly=UiPath.DataService.Activities.Core" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Get_Product_Information" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1004,1973.6" sap2010:WorkflowViewState.IdRef="Get_Product_Information_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:u="clr-namespace:UiPath_Entities_Example;assembly=DataService.UiPath_Entities_Example" xmlns:uda="clr-namespace:UiPath.DataService.Activities;assembly=UiPath.DataService.Activities.Core" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="30">
       <x:String>System.Activities</x:String>
@@ -34,7 +34,7 @@
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="21">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="26">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -56,13 +56,23 @@
       <AssemblyReference>DataService.UiPath_Entities_Example</AssemblyReference>
       <AssemblyReference>UiPath.DataService.Definition</AssemblyReference>
       <AssemblyReference>UiPath.DataService.Activities.Core</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Get_Product_Information" sap:VirtualizedContainerService.HintSize="700,1528.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Get_Product_Information" sap:VirtualizedContainerService.HintSize="700,1908.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="ProductDatatable" />
       <Variable x:TypeArguments="u:Products" Name="Products" />
-      <Variable x:TypeArguments="x:Int32" Name="SLNO" />
+      <Variable x:TypeArguments="x:Int32" Name="SLNO">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:Int32" Value="1" />
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="scg:IList(u:Suppliers)" Name="ListOfSuppliers" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -92,33 +102,56 @@
         </ActivityAction>
       </ui:ExcelApplicationScope.Body>
     </ui:ExcelApplicationScope>
-    <Sequence DisplayName="Perform Data Service Operation " sap:VirtualizedContainerService.HintSize="658.4,1133.6" sap2010:WorkflowViewState.IdRef="Sequence_5">
+    <ui:Comment sap:VirtualizedContainerService.HintSize="658.4,75.2" sap2010:WorkflowViewState.IdRef="Comment_1" Text="// for Creating Related records we need to Map the Suppliers Entity " />
+    <Sequence DisplayName="Perform Data Service Operation " sap:VirtualizedContainerService.HintSize="658.4,1398.4" sap2010:WorkflowViewState.IdRef="Sequence_5">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <If Condition="[ExtractDataTable.Rows.Count &gt; 0]" sap:VirtualizedContainerService.HintSize="616.8,1040.8" sap2010:WorkflowViewState.IdRef="If_1">
+      <If Condition="[ProductDatatable.Rows.Count &gt; 0]" sap:VirtualizedContainerService.HintSize="616.8,1305.6" sap2010:WorkflowViewState.IdRef="If_1">
         <If.Then>
-          <Sequence sap:VirtualizedContainerService.HintSize="472.8,891.2" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <Sequence sap:VirtualizedContainerService.HintSize="472.8,1156" sap2010:WorkflowViewState.IdRef="Sequence_4">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[ProductDatatable]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="431.2,798.4" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+            <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[ProductDatatable]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="431.2,1063.2" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="381.6,649.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="381.6,914.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
+                    <uda:QueryEntityRecords x:TypeArguments="u:Suppliers" TotalRecords="{x:Null}" ContinueOnError="False" DisplayName="Query Entity Records" ExpansionDepth="2" sap:VirtualizedContainerService.HintSize="340,224.8" sap2010:WorkflowViewState.IdRef="QueryEntityRecords`1_1" OutputRecords="[ListOfSuppliers]" Skip="0" SortAscending="True" SortByField="Id" TimeoutInMs="30000" Top="100">
+                      <uda:QueryEntityRecords.FilterArguments>
+                        <uda:FilterArgument FilterActivityType="u:Suppliers">
+                          <uda:FilterArgument.Filter>
+                            <uda:GroupFilter Operator="and">
+                              <uda:GroupFilter.Filters>
+                                <scg:List x:TypeArguments="uda:SimpleFilter" Capacity="4">
+                                  <uda:SimpleFilter FieldName="SupplierID" FieldType="System.Nullable`1[[System.Decimal, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" Operator="=">
+                                    <uda:SimpleFilter.ExpressionValue>
+                                      <InArgument x:TypeArguments="s:Nullable(x:Decimal)">[SLNO]</InArgument>
+                                    </uda:SimpleFilter.ExpressionValue>
+                                  </uda:SimpleFilter>
+                                </scg:List>
+                              </uda:GroupFilter.Filters>
+                              <uda:GroupFilter.Groups>
+                                <scg:List x:TypeArguments="uda:GroupFilter" Capacity="0" />
+                              </uda:GroupFilter.Groups>
+                            </uda:GroupFilter>
+                          </uda:FilterArgument.Filter>
+                        </uda:FilterArgument>
+                      </uda:QueryEntityRecords.FilterArguments>
+                    </uda:QueryEntityRecords>
                     <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="340,192.8" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
                       <ui:MultipleAssign.AssignOperations>
                         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
@@ -146,19 +179,19 @@
                               <InArgument x:TypeArguments="x:String">[row("ProductName").ToString]</InArgument>
                             </ui:AssignOperation.Value>
                           </ui:AssignOperation>
-                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_8">
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_9">
                             <ui:AssignOperation.To>
                               <OutArgument x:TypeArguments="u:Suppliers">[Products.SupplierID]</OutArgument>
                             </ui:AssignOperation.To>
                             <ui:AssignOperation.Value>
-                              <InArgument x:TypeArguments="x:Double">[Double.Parse(row("SupplierID").ToString)]</InArgument>
+                              <InArgument x:TypeArguments="u:Suppliers">[ListOfSuppliers(0)]</InArgument>
                             </ui:AssignOperation.Value>
                           </ui:AssignOperation>
                         </scg:List>
                       </ui:MultipleAssign.AssignOperations>
                     </ui:MultipleAssign>
                     <uda:CreateEntityRecord x:TypeArguments="u:Products" ContinueOnError="False" DisplayName="Create Entity Record" ExpansionDepth="2" sap:VirtualizedContainerService.HintSize="340,224" sap2010:WorkflowViewState.IdRef="CreateEntityRecord`1_1" InputEntity="[Products]" OutputEntity="[Products]" TimeoutInMs="30000" />
-                    <Assign sap:VirtualizedContainerService.HintSize="340,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+                    <Assign sap:VirtualizedContainerService.HintSize="340,60" sap2010:WorkflowViewState.IdRef="Assign_2">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:Int32">[SLNO]</OutArgument>
                       </Assign.To>
